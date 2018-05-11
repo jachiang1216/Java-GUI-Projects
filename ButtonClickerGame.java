@@ -2,6 +2,8 @@ package Practice;
 /*Exposure to Graphical User Interfaces (GUI)
  * A very very random button clicking game with a counter. This gave me exposure to some of
  * Java awt/swing's capabilities.
+ * The Game is really simple. Click on the button a 'X' number of times. You win when you reach the number.
+ * ALSO, Please do not get Arthritis from this. You have been Warned! 
  * Created by Jian An Chiang
 */
 import java.awt.*;
