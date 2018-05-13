@@ -106,8 +106,8 @@ class CalcMachine extends JFrame{
 		calcWindow.add(CalcPanel,BorderLayout.SOUTH);
 		calcWindow.setVisible(true); //Set the window to visible
 	}
-	//Details Window
-	void detailWindow(){
+	//Details Panel
+	void detailPanel(){
 		//Hide Previous Panels
 		InformationPanel.setVisible(false);
 		DisplayPanel.setVisible(false);
@@ -201,7 +201,7 @@ class CalcMachine extends JFrame{
 				CalcPanel.add(buttonEmpty);
 				CalcPanel.add(buttonCE);
 				CalcPanel.add(buttonBackSpace);
-				CalcPanel.add(button7); //Button will be at the bottom.
+				CalcPanel.add(button7);
 				CalcPanel.add(button8);
 				CalcPanel.add(button9);
 				CalcPanel.add(buttonDiv);
@@ -249,15 +249,15 @@ class CalcMachine extends JFrame{
 	private class ListenForButton implements ActionListener{
 		public void actionPerformed(ActionEvent e){
 			if (e.getSource()==buttonInfo){
-				detailWindow();
+				detailPanel(); //Call the Detail Panel
 			}
-			else if (e.getSource()==goBack){
+			else if (e.getSource()==goBack){ //Go back to Calculator Panels
 				displayString="";
 				thePanel.setVisible(false);
 				InformationPanel.setVisible(true);
 				DisplayPanel.setVisible(true);
 				CalcPanel.setVisible(true);
-			}else if (e.getSource()==button1){
+			}else if (e.getSource()==button1){ 
 				if (overwrite==true){
 					displayString="";
 					overwrite=false;
