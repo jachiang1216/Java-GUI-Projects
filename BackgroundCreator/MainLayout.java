@@ -57,7 +57,7 @@ class MainLayout extends JFrame{
 		win.setSize(1200,800);
 		win.setResizable(false);
 		win.setLocationRelativeTo(null);
-		win.setIconImage(tk.getImage("Paintbrush.png"));
+		win.setIconImage(tk.getImage("Icons/Paintbrush.png"));
 		win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		win.getContentPane().setBackground(Color.GRAY);
 		return win;
